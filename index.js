@@ -9,7 +9,7 @@ const hostname = '127.0.0.1';
 const DBPATH = 'dbHURB.db';
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("Frontend"));
+app.use(express.static("./"));
 
 // Adicionar um parceiro com seu nome e montante total(que vai ser calculado automaticamente e não manualmente, e atualizado em tempo real)
 app.post('/createpartner', urlencodedParser, (req, res) => {
