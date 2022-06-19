@@ -2,13 +2,13 @@ var list = [];
 var login;
 var i = 0;
 var logged = false;
-var api = 'http://127.0.0.1:3000';
 
 
 function signup() {
     window.location = 'Frontend/cadastro.html'
 }
 function getUsers() {
+    console.log(window.location)
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("http://127.0.0.1:3000/users", function(users) {
