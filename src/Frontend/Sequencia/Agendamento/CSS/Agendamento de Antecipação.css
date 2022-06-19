@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-color:#3468fc;
+}
+.left-arrow{
+    width: 70px;
+}
+
+.valor{
+    margin-top: 4%;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.auto-scheduling{
+    margin-top: 40px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align:center;
+}
+
+.lil-img{
+    margin-top: 10px;
+    margin-right: 8px;
+    width: 80px;
+}
+.box1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    border-radius:20px;
+    border-color: #3468fc;
+    color:#3468fc;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.dateinput {
+    color: black;
+    text-align: center;
+}
+.dateimg_input {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+
+}
+#date2 {
+    margin-bottom:10px;
+}
+.inputs{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    color:black;
+    border-color: #3468fc;
+    font-size: 20px;
+    width: 40%;
+    min-width: 600px;
+    height: 40px;
+}
+
+
+.box2{
+    align-items: center;
+    text-align: center;
+    background-color:white;
+    border-radius:20px;
+    border-color: #3468fc;
+    color:#3468fc;
+    display:flex;
+    font-size: 15px;
+    margin-top:7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+}
+
+.input_2_reais{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    color:black;
+    border-color: #3468fc;
+    font-size: 30px;
+    width: 1000px;
+    height: 60px;
+    margin-left: 4%;
+}
+
+.pay{
+    width: 140px;
+    height: 140px;
+
+}
+
+.texto_de_pagamento{
+    margin-top: 40px;
+    font-size: 28px;
+    text-align: center;
+    color:black;
+}
+
+button{
+    color:white;
+    border: solid #8CAAFD;
+    background-color: #8CAAFD;
+    border-radius: 20px;
+    width: 350px;
+    height: 60px;
+    font-size: 12px;
+    font-size: large;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+label{
+    color: #3468fc;
+    font-size: 18px;
+}
+.formas_alinhadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.options {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.options_button {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.finishbutton {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 768px){
+    /*For mobile phones */
+    .Agendamento-automático{
+        color: black;
+        margin-top: 10%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align:center;
+        margin-bottom: 20%;
+    }
+
+    .lil-img{
+        width: 60px;
+        height: 60px;
+        margin-right: 80px;
+    }
+
+    .box1{
+        align-items: center;
+        text-align: center;
+        background-color:white;
+        border-radius:20px;
+        border-color: #3468fc;
+        color:#3468fc;
+        width: 70%;
+        margin-top:13%;
+        margin-left: 2%;
+        margin-bottom: 4%;
+    }
+
+    .input{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    border-color: #3468fc;
+    font-size: 23px;
+    }
+
+    .box2{
+        align-items: center;
+        text-align: center;
+        background-color:white;
+        border-radius:20px;
+        border-color: #3468fc;
+        color:#3468fc;
+        width: 70%;
+        margin-top:13%;
+        margin-left: 2%;
+        margin-bottom: 4%;
+    }
+    
+    .input_2_reais{
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #3468fc;
+    border-color: #3468fc;
+    font-size: 23px;
+}
+    .pay{
+        width: 70px;
+        height: 70px;
+    }
+
+    .texto_de_pagamento{
+        font-size: 28px;
+        text-align: center;
+        margin-left: 15%;
+        color:black;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+    
+    label{
+        color: #3468fc;
+        font-weight: bold;
+        display:flex;
+        font-size: 30px;
+    }
+    
+    button{
+        color:white;
+        font-weight: bold;
+        border: solid #3468fc;
+        background-color: #8CAAFD;
+        border-radius: 20px;
+        width: 180px;
+        height: 50px;
+        margin-top: 2%;
+        margin-bottom: 4%;
+        margin-left: 50%;
+        font-size: 20px;
+
+    }
+    
+}

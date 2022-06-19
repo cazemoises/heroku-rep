@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="../JS/Agendamento-de-antecipacao.js"></script>
+        <link rel="stylesheet" href="../CSS/Agendamento de Antecipação.css">
+        <link rel = "stylesheet" href = "../../../global/global.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <div class = "topBar">
+            <div class = "leftSide">
+                <img class="left-arrow" src="../../../global/flecha_borda_grossa_centro.png" onclick="history.back()">
+            </div>
+            <div class="rightSide">
+                <img class = "logo" src = "../../../global/Logo.Hurb.png">
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="auto-scheduling">
+            Agende suas antecipações
+        </div>
+
+    <form action="../Agendamento finalizado/Agendamento FInalizado.html" method="GET">
+        <div class="box1">
+            <box>
+                <img class="lil-img" src="../HTML/calendar.png">
+            </box>
+            <div class="dateimg_input">
+                <label class = "dateinput" id = "date2" for ="dateinput"> Escreva a data que gostaria de receber. Ex: "xx/xx/xxxx" </label>
+                <input type = "date" class="inputs" name = "dateinput" required></input>
+            </div>
+        </div>
+
+            <div class = "valor">
+                Escreva o valor a receber. Ex: "2.000,00"
+            </div>
+
+        <div class="box1">
+            <box id = "boximg">
+                <img class="lil-img" src="../HTML/pay.png">
+            </box>
+            
+            <input class="inputs" required></input>
+        </div>
+        
+        <div class="formas_alinhadas">
+
+            <div class="texto_de_pagamento">
+                <p>Selecione a forma de pagamento</p>
+            </div>
+            <div class = "options_button">
+                <div class="options">
+                    <div class="boletooption">
+                        <input type="radio" id="boleto" name="age" value="boleto"></input><label class="bol" for="boleto">Boleto</label>
+                    </div>
+                    <div class="pixoption">
+                        <input type="radio" id="pix" name="age" value="pix"></input><label class="pix" for="pix">Pix</label>
+                    </div>
+                    <div class="transferenciaoption">
+                        <input type="radio" id="transferência" name="age" value="Transferência"><label class="transferência" for="transferência">Transferência</label>
+                        </input>
+                    </div>
+                </div>
+                <div class="finishbutton">
+                    <button type="submit" onclick="changePage1()">
+                        Finalizar Agendamento
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </body>
+</html>

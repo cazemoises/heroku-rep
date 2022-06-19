@@ -1,0 +1,105 @@
+h1{
+    text-align: center;
+}
+
+.row{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #eaeaea;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.col {
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    width: 75%;
+}
+
+.email{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 5%;
+}
+
+.login-do-parceiro{
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 12%;
+}
+
+.senha-do-parceiro{
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 12%;
+}
+
+.senha{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 5%;
+}
+
+.hotel-do-parceiro{
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 12%;
+}
+
+.hotel-hotel{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 5%;
+}
+
+.CNPJ-do-parceiro{
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 12%;
+}
+
+.CNPJ-numero{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 5%;
+}
+
+.cidade-do-hotel{
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 12%;
+}
+
+.cidade{
+    font-size: 15px;
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 5%;
+}
+
+.estado-do-hotel{
+    color: blue;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 12%;
+}
+
+.estado{
+    font-size: 15px;
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 5%;
+}

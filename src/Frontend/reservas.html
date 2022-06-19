@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../global/global.css">
+    <script src = "Sequencia/reservas/reservas.js"></script>
+    <link rel="stylesheet" href="Sequencia/reservas/reservas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body onload = "getReserves()">
+    <header>
+        <div class = "topBar">
+            <div class = "leftSide">
+                <img class="left-arrow" src="../../global/flecha_borda_grossa_centro.png" onclick="history.back()">
+            </div>
+            <div class="rightSide">
+                <img class = "logo" src = "../../global/Logo.Hurb.png">
+            </div>
+        </div>
+        <div class="container">
+        <table class="fixed_headers">
+            <thead>
+            <tr>
+                <th>Marcar tudo</th>
+                <th>Código da Reserva</th>
+                <th>Data de Hospedagem</th>
+                <th>Valor</th>
+            </tr>
+            </thead>
+            <tbody id = "tbody">
+                <tr>
+                    <td><input type = "checkbox" id = "select-all" onclick = "selectAll()"></td>
+                </tr>
+            </tbody>
+        </table>
+            <div class="choose-option">
+                <select>
+                    <option>Selecione um modelo</option>
+                    <option>D+ 2</option>
+                    <option>D+ 7</option>
+                    <option>D+ 15</option>
+                    <option>D+ 30</option>
+                </select>
+            </div>
+            <div class="button-div">
+                <button class="button" onclick = "gotodemonstrativo()">Confirmar</button>
+            </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+    * {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0;
+}
+
+.topBar {
+    display: flex;
+    height: 50px;
+    background-color: #3468fa;
+    width: 100%;
+}
+.leftSide {
+    align-items: center;
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+} 
+.logo {
+    height: 50px;
+    margin-right: 7px;
+}
+.rightSide {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-arrow{
+    margin-left: 2px;
+    height: 40px;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+
