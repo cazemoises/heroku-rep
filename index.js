@@ -183,5 +183,5 @@ app.post('/new-access', urlencodedParser, (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-    console.log(`BD server running at ${port}/`);
+    console.log(`BD server running at ${process.env.PORT}/`);
   });
