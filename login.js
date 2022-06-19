@@ -40,5 +40,5 @@ function postAcess() {
     changePage()
 }
 function changePage() {
-    window.location = "../antecipe.html"
+    window.location = "Frontend/antecipe.html"
 }
