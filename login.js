@@ -2,16 +2,16 @@ var list = [];
 var login;
 var i = 0;
 var logged = false;
+var api = 'https://teste-caze.herokuapp.com';
 
 
 function signup() {
     window.location = 'Frontend/cadastro.html'
 }
 function getUsers() {
-    console.log(window.location)
     login = $("#login").val();
     pass = $("#pass").val();
-    $.get("http://127.0.0.1:3000/users", function(users) {
+    $.get("https://teste-caze.herokuapp.com/users", function(users) {
     while (i < users.length) {
     if (users[i].login == login) {
         if (users[i].senha == pass) {

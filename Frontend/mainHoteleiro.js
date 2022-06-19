@@ -30,10 +30,10 @@ function saiba_mais(){
 function getAmount() {
     let count = 0;
     let match = false;
-    $.get("http://127.0.0.1:3000/get-access", function(access) {
+    $.get("https://teste-caze.herokuapp.com/get-access", function(access) {
     let accessed = (access[0].login_parceiro);
     console.log(accessed + " = login que acessou")
-    $.get("http://127.0.0.1:3000/users", function(users) {
+    $.get("https://teste-caze.herokuapp.com/users", function(users) {
         console.log(users);
         // fazer looping para verificar qual users[n].login é igual ao accessed (login do acesso mais recente)
         var i = 0;
@@ -43,7 +43,7 @@ function getAmount() {
                 found = true;
                 var logged_id = (users[i].hotel_cnpj)
                     console.log("deu certo até aqui" + logged_id)
-                $.get("http://127.0.0.1:3000/get-partners", function(partners) {
+                $.get("https://teste-caze.herokuapp.com/get-partners", function(partners) {
                 let j = 0;    
                 let match = false;
                 console.log(partners);
@@ -72,8 +72,8 @@ function getAmount() {
 
     }
 function eyeMode() {
-    if(document.getElementById('eyeimg').src == 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png') {
-        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_fechado.png'
+    if(document.getElementById('eyeimg').src == 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_aberto2.png') {
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_fechado.png'
         let i = 0;
         let stringPart = String(part).length
         console.log(stringPart)
@@ -84,7 +84,7 @@ function eyeMode() {
         }
     }
     else {
-        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png'
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_aberto2.png'
         $('#teste2').html(`R$ ${currentVal}`)
     }
 }

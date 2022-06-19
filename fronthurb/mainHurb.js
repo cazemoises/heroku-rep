@@ -6,7 +6,7 @@ var string;
 
 // Pega o status de antecipações
 function getAnticipationsNumber() {
-    $.get("http://127.0.0.1:3000/feedback", function(quantidade) {
+    $.get("https://teste-caze.herokuapp.com/feedback", function(quantidade) {
     var size = quantidade.length;
     if (size == 0) {
         string = "Nenhuma antecipação";

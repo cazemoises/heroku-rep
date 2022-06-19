@@ -3,7 +3,7 @@ var logged_hotel = sessionStorage.getItem("logged_hotel");
 var reservas;
 function getReserves() {
     
-    $.get("http://127.0.0.1:3000/get-reserves", function(reserves) {
+    $.get("https://teste-caze.herokuapp.com/get-reserves", function(reserves) {
     let i = 0;
     let totalvalue = 0;
     while (i < reserves.length) {

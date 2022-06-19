@@ -1,4 +1,4 @@
-var api = 'http://127.0.0.1:3000'
+var api = 'https://teste-caze.herokuapp.com'
 var regra = 0;
 var valorEscolhido;
 var dia;
