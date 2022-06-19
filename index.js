@@ -5,7 +5,7 @@ const app = express();
 const database = new sqlite3.Database('./dbHURB.db') //nova instância para pegar o banco de dados
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
 const port = process.env.PORT || 3000;
-const hostname = '127.0.0.1';
+// const hostname = '127.0.0.1';
 const DBPATH = 'dbHURB.db';
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
