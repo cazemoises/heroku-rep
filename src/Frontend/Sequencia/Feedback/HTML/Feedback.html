@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script src="../JS/Feedback.js"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/Feedback.css">
+        <link rel = "stylesheet" href = "../CSS/global/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Solicitação Finalizada</title>
+    </head>
+    <header>
+        <div class = "topBar">
+            <div class = "leftSide">
+                <img class="left-arrow" src="../CSS/global/flecha_borda_grossa_centro.png" onclick="history.back()">
+            </div>
+            <div class="rightSide">
+                <img class = "logo" src = "../CSS/global/Logo.Hurb.png">
+            </div>
+        </div>
+    </header>
+    <body onload = "timeNow()">
+        <div class="text_tranferência_concluída">
+            Solicitação concluída com sucesso!
+        </div>
+        
+        <div class="time-line">
+            <div class="time-margin">
+                <div class="clockdiv">
+                    <img class="clock" src="./Transferência concluída.png">
+                </div>
+            </div>
+        </div>
+        <div class="time">
+            <div id = "datenow" class="date">
+                xx/Mês 20xx 00:00:00
+            </div>
+        </div>
+        
+        <div class="check-icon">
+            <img class="check" src="./Icone_de_check.png">
+        </div>
+
+
+        <form>
+            <div class="home-button">
+                <button class = "confirm-button"type="button" onclick="changepage()">Início</button>
+            </div>
+        </form>
+    </body>
+</html>

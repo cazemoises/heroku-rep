@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>extrato</title>
+    <link rel="stylesheet" href="../css/extrato.css">
+    <link rel="stylesheet" href="../css/global/global.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <script src="../js/extrato.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Histórico</title>
+</head>
+<body onload = "teste()">
+    <div class="container">
+        <header>
+            <div class = "topBar">
+                <div class = "leftSide">
+                    <img class="left-arrow" src="../css/global/flecha_borda_grossa_centro.png" onclick="history.back()">
+                </div>
+                <div class="rightSide">
+                    <img class = "logo" src = "../css/global/Logo.Hurb.png">
+                </div>
+            </div>
+        </header>
+        <div class="title">
+            Histórico de saques
+        </div>
+        <div class="searchBar">
+            <input class="filter" placeholder="Pesquisar" type="date">
+            <select>
+                <option selected>Filtrar por Regra</option>
+                <option>D+2</option>
+                <option>D+7</option>
+                <option>D+15</option>
+            </select>
+            <input class="filter" placeholder="Filtrar por valor">
+        </div>
+        <div class="box">
+            <div class="column-1" id = "date">
+                <div  class="item">
+                    Data de solicitação
+                </div>
+                <div class="date">
+                    12/13/14
+                </div>
+                <div class="date">
+                    12/13/14
+                </div>
+            
+            </div>
+            <div class="column-2" id = "rule">
+                <div class="item">
+                    Regra
+                </div>
+                <div class="rule">
+                    D+
+                </div>
+                <div class="rule">
+                    Aprovado
+                </div>
+          
+            </div>
+            <div id = "requested-values" class="coulumn-3">
+                <div class="item">
+                    Valor Solicitado
+                </div>
+                <div class="value">
+                    R$:xxxxxx
+                </div>
+                <div class="value">
+                    R$:xxxxxx
+                </div>
+           
+            </div>
+            <div id = "discounted-values" class="coulumn-4">
+                <div class="item">
+                    Valor Descontado
+                </div>
+                <div class="value">
+                    R$:xxxxxx
+                </div>
+                <div class="value">
+                    R$:xxxxxx
+                </div>
+           
+            </div>
+        </div>
+    </div>
+</body>
+</html>

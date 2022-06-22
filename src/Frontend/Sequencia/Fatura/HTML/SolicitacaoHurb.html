@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/SolicitacaoHurb.css">
+        <link rel = "stylesheet" href = "../CSS/global/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Solicitação</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+
+    <body onload = "keyUp()">
+        
+<div id="toast"></div>
+
+        <header>
+            <div class = "topBar">
+                <div class = "leftSide">
+                    <img class="left-arrow" src="../CSS/global/flecha_borda_grossa_centro.png" onclick="history.back()">
+                </div>
+                <div class="rightSide">
+                    <img class = "logo" src = "../CSS/global/Logo.Hurb.png">
+                </div>
+            </div>
+        </header>
+        <div class="escrita" >
+            <hr> 
+            Confirmação de Fatura
+            <hr> 
+        </div>
+        
+    <div class="all">
+        <div class="valor_a_receber">
+            Valor a receber:
+        </div>
+        <input id = "valorEscolhido" class = "input_1_data" type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="Digite o valor desejado">
+    <div class="quadrado">
+        <div class = "receive-in-text">Receba dentro de :</div>
+        <div class="opcoes">
+            <form required>
+                <input type = "radio" name = "d" id = "d30" class = "radioinput" value = 30>
+                <label id = "label30" for = "d30">30 Dias - sem abatimento, valor final de R$(sem desconto)</label><br>
+                <input type = "radio" name = "d" id = "d15" class = "radioinput" value = 15>
+                <label id = "label15" for = "d15">15 dias - descontados 6%, valor final de R$( - 6%)</label><br>
+                <input type = "radio" name = "d" id = "d7" class = "radioinput" value = 7>
+                <label id = "label7" for = "d7">7 dias - descontados 9%, valor final de R$( - 9%)</label><br>
+                <input type = "radio" name = "d" id = "d2" class = "radioinput" value = 2>
+                <label id = "label2" for = "d2" style="color:rgb(80, 193, 80)">2 dias(opção mais pedida) - descontados 12%, valor final de R$( - 12%)</label>
+            </form>
+        </div>
+ 
+        
+        <div class="cancelar">
+            <button class="botao" onclick = "history.back()">Cancelar</button>
+            <button class="botao" onclick="confirm()">Confirmar</button>
+        </div>
+    </div>
+    <script src="../JS/Solicitacao.js"></script>
+</body>
+</html>

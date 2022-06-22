@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demonstrativo </title>
+        <link rel="stylesheet" href="../CSS/Solicitação-Demonstrativo.css">
+        <link rel = "stylesheet" href = "../CSS/global/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="../JS/solicitacao-demonstrativo.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <header>
+        <div class = "topBar">
+            <div class = "leftSide">
+                <img class="left-arrow" src="../CSS/global/flecha_borda_grossa_centro.png" onclick="history.back()">
+            </div>
+            
+            <div class="rightSide">
+                <img class = "logo" src = "../CSS/global/Logo.Hurb.png">
+            </div>
+        </div>
+    </header>
+
+    <body onload="viewAnticipation()">
+        <div class="Demonstrativo">
+            Demonstrativo<hr>
+        </div>
+            <div class="retangle">
+                <div class="col">
+                    <div class="data_de_faturamento">
+                        Data de faturamento
+                    </div>
+
+                    <div id = "datenow"class="calendar_de_faturamento">
+                        xx/xx/xxxx
+                    </div>
+                </div>
+
+                <div class="col">  
+                    <div class="Sistema_escolhido">
+                        Sistema escolhido
+                    </div>
+                    <div id = "ds" class="Ds">
+                        D+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="valor_requerido">
+                        Valor requerido
+                    </div>
+                    <div id = "choosen-value" class="valor_em_reais_requerido_">
+                        R$ 00,00
+                    </div>
+                </div>
+                    <div class="col">
+                    <div class="valor_a_receber">
+                        Valor a receber
+                    </div>
+                    <div id = "final-value" class="valor_em_reais_descontado_">
+                        R$ 00,00
+                    </div>
+                </div>
+            </div>
+
+            <div class="importante-seguranca">
+                Importante
+            </div>
+            <div class="mensagem">
+                Não é possível cancelar esta operação após a confirmação do pagamento!
+            </div>
+        </div>
+
+        <button class="confirmar" onclick="changePage()">Confirmar</button>
+        
+    </body>
+</html>
