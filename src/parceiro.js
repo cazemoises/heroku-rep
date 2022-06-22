@@ -4,8 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const database = new sqlite3.Database('./dbHURB.db') //nova instância para pegar o banco de dados
 const urlencodedParser = bodyParser.urlencoded({ extended: true });
-const port = 3000;
-const hostname = '127.0.0.1';
+const port = process.env.PORT || 3000;
 const DBPATH = 'dbHURB.db';
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -199,6 +198,6 @@ app.post('/new-access', urlencodedParser, (req, res) => {
 	res.end();
 });
 
-app.listen(port, hostname, () => {
-    console.log(`BD server running at http://${hostname}:${port}/`);
+app.listen(port, () => {
+    console.log(`BD server running at ${port}/`);
   });
