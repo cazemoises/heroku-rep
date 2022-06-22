@@ -1,16 +1,19 @@
 {
-  "name": "src",
+  "name": "heroku-rep",
   "version": "1.0.0",
-  "description": "",
-  "main": "parceiro.js",
+  "description": "<p align=\"center\">\r <a href= \"https://www.inteli.edu.br/\"><img src=\"https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png\" alt=\"Inteli - Instituto de Tecnologia e Liderança\" border=\"0\"></a>\r </p>",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cazemoises/heroku-rep.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.1",
-    "sqlite3": "^4.1.1"
-  }
+  "bugs": {
+    "url": "https://github.com/cazemoises/heroku-rep/issues"
+  },
+  "homepage": "https://github.com/cazemoises/heroku-rep#readme"
 }
