@@ -55,7 +55,7 @@ function viewAnticipation() {
               dianome = "Sábado";
         }
         $("#datenow").html(`${dia}/${mes}/${ano} - ${dianome}`);
-        $("#ds").html(`D+${d} (${d}%)`);
+        $("#ds").html(`D+${d} (${regra}%)`);
         $("#choosen-value").html(`R$ ${valorEscolhido}`);
         $("#final-value").html(`R$ ${resultado}`)
 }
