@@ -15,12 +15,13 @@ function getUsers() {
     userslist = sessionStorage.setItem("userslist", users)
     let i = 0
     while (i < users.length) {
+        console.log(users)
         console.log(i)
     if (users[i].login == login) {
         if (users[i].senha == pass) {
             logged = true;  
         }
-    }
+    }   
     console.log(logged)
     i += 1;    
 }
