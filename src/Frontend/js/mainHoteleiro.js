@@ -67,6 +67,7 @@ function getAmount() {
     })
     }
 function eyeMode() {
+    console.log(document.getElementById('eyeimg').src)
     if(document.getElementById('eyeimg').src == 'https://teste-caze.herokuapp.com/imgs/olho_aberto2.png') {
         document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/imgs/olho_fechado.png'
         let i = 0;
