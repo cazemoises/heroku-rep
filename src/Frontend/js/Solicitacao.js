@@ -109,7 +109,7 @@ function toast({ title = "", message = "", type = "info", duration = 3000 }) {
                       </div>
                   `;
       main.appendChild(toast);
-      // $("#valorEscolhido").val('')
+      $("#valorEscolhido").val('')
     }
   }
   
@@ -123,13 +123,13 @@ function keyUp() {
             value = value.split(/[ ,]+/)
             let a = 2;
             value.splice(0,1)
-            let k = 0;
             finalString = ''
+            let k = 0;
             while (k < value.length) {
                 finalString += String(value[k]);
                 k += 1;
             }
-
+            console.log(finalString + " " + d15)
             $("#label30").html("30 Dias - sem abatimento, valor final de R$" + String(Number(finalString)));
             $("#label15").html("15 Dias - descontados 6%, valor final de R$" + String((Number(finalString) - Number(finalString)*d15).toFixed(2)));
             $("#label7").html("7 Dias - descontados 9%, valor final de R$" + String(Number(finalString) - Number(finalString)*d7.toFixed(2)));
