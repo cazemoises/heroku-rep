@@ -84,7 +84,6 @@ function saveData2() {
   } 
   }
   successRegisterToast()
-  $("#")
 }
 
 function successRegisterToast() {
