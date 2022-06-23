@@ -24,7 +24,7 @@ function getUsers() {
         }
     }   
     console.log(logged)
-    i += 1;    
+    l += 1;    
 }
 if (logged == false) {
     alert("Login ou senha inválidos");
