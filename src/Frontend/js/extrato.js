@@ -8,7 +8,6 @@ function teste() {
       var discountedString = ' <div class="item">Valor Descontado</div>'
       var ruleString = '<div class="item">Regra</div>'
       var dateString = '<div  class="item">Data de solicitação</div>'
-      var percent
       while (i < anticipation.length) {
         if (anticipation[i].hotelCnpj == logged_cnpj) {
             console.log(anticipation[i].montanteEscolhido)
