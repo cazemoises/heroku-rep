@@ -18,8 +18,8 @@ function getUsers() {
     while (l < users.length) {
         console.log(users)
         console.log(l)
-    if (users[i].login == login) {
-        if (users[i].senha == pass) {
+    if (users[l].login == login) {
+        if (users[l].senha == pass) {
             logged = true;  
         }
     }   
