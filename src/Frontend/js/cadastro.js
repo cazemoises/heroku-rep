@@ -84,6 +84,7 @@ function saveData2() {
   } 
   }
   successRegisterToast()
+  window.location = '../html/index.html'
 }
 
 function successRegisterToast() {
