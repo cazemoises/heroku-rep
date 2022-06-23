@@ -9,7 +9,7 @@ function signup() {
     window.location = '../cadastro.html'
 }
 function getUsers() {
-    console.log("a")
+    console.log($('.logo').src)
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("http://127.0.0.1:3000/users", function(users) {
