@@ -2,14 +2,13 @@ var list = [];
 var login;
 var i = 0;
 var logged = false;
-var api = 'http://127.0.0.1:3000';
+var api = 'https://teste-caze.herokuapp.com';
 
 var userslist
 function signup() {
     window.location = '../cadastro.html'
 }
 function getUsers() {
-    console.log($('#logo').src)
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("https://teste-caze.herokuapp.com/users", function(users) {
@@ -44,7 +43,6 @@ function postAcess() {
         })
     }
     changePage()
-    console.log("Achei")
 }
 function changePage() {
     window.location = "src/Frontend/html/antecipe.html"
