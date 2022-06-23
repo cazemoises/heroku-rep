@@ -115,7 +115,7 @@ function cnpjempty() {
     }
 
 function nextPage() {
-    window.location = 'cadastro2.html'
+    window.location = '../html/cadastro.html'
 }
 
 
