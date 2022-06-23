@@ -123,15 +123,12 @@ function keyUp() {
             value = value.split(/[ ,]+/)
             let a = 2;
             value.splice(0,1)
-            
-            console.log(value)
             let k = 0;
             finalString = ''
             while (k < value.length) {
                 finalString += String(value[k]);
                 k += 1;
             }
-                console.log(finalString);
 
             $("#label30").html("30 Dias - sem abatimento, valor final de R$" + String(Number(finalString)));
             $("#label15").html("15 Dias - descontados 6%, valor final de R$" + String((Number(finalString) - Number(finalString)*d15).toFixed(2)));
