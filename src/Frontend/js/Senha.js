@@ -12,7 +12,7 @@ for (let pin of otp.children) {
         if (event.target.value > 0)
         if (pin.nextElementSibling) {
             pin.nextElementSibling.focus();
-        }
+        }   
     };
 }
 
@@ -61,6 +61,7 @@ function insert() {
     var year = Ndate.getFullYear()
     var dataDMA = (`${dia}/` + (Number(mes)+1) + `/${year}`)
     var d
+    console.log(dataDMA)
     if (regra == 6) {
         d = 15
     }
