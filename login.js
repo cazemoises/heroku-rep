@@ -9,7 +9,7 @@ function signup() {
     window.location = '../cadastro.html'
 }
 function getUsers() {
-    console.log($('.logo').src)
+    console.log($('#logo').src)
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("https://teste-caze.herokuapp.com/users", function(users) {
