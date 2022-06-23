@@ -9,7 +9,7 @@ function menu(){
 }
 
 function antecipe_seus_ganhos(){
-    window.location= 'Sequencia/opcaoAntecipacao/html/opcaoAntecipacao.html'
+    window.location= '../html/opcaoAntecipacao.html'
 }
 
 function antecipacao_automatica(){
