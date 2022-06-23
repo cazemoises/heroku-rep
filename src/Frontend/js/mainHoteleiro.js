@@ -1,11 +1,7 @@
 var currentVal
 var partn
 function openMenu() {
-    window.location = 'Sequencia/MenuHoteleiro/HTML/menu.html'
-}
-
-function menu(){    
-    window.location = 'file:///C:/Users/Inteli/Desktop/DESENVOLVIMENTO%20WEB/NOVAS%20TELAS%20-%20DAYLLAN/Apresenta%C3%A7%C3%A3o/2.%20HOTEL.HENRI%20-%20Menu.Hoteleiro/HTML/tela%20de%20cadastro.html'
+    window.location = '../html/menu.html'
 }
 
 function antecipe_seus_ganhos(){
@@ -13,11 +9,11 @@ function antecipe_seus_ganhos(){
 }
 
 function antecipacao_automatica(){
-    window.location= 'Sequencia/Agendamento/HTML/Agendamento.html'
+    window.location= '../html/Agendamento.html'
 }
 
 function extrato(){
-    window.location=''
+    window.location= '../html/extrato.html'
 }
 function configuracoes(){
     window.location = ''
@@ -28,7 +24,6 @@ function getAmount() {
     let accessed = (access[0].login_parceiro);
     console.log(accessed + " = login que acessou");
     $.get("https://teste-caze.herokuapp.com/users", function(users) {
-        console.log(users);
         // fazer looping para verificar qual users[n].login é igual ao accessed (login do acesso mais recente)
         let i = 0;
         let found = false;
