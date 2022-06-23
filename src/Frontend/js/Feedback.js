@@ -34,6 +34,6 @@ function timeNow() {
 }
 
 function changepage(){
-    window.location='../../../antecipe.html'
+    window.location='../html/antecipe.html'
 }
 
