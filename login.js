@@ -6,14 +6,13 @@ var api = 'https://teste-caze.herokuapp.com';
 
 var userslist
 function signup() {
-    window.location = '../cadastro.html'
+    window.location = 'l'
 }
 function getUsers() {
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("https://teste-caze.herokuapp.com", function(users) {
     userslist = sessionStorage.setItem("userslist", users)
-    console.log(users)
     while (i < users.length) {
     if (users[i].login == login) {
         if (users[i].senha == pass) {
