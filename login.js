@@ -11,7 +11,7 @@ function signup() {
 function getUsers() {
     login = $("#login").val();
     pass = $("#pass").val();
-    $.get("http://teste-caze.herokuapp.com", function(users) {
+    $.get("https://teste-caze.herokuapp.com", function(users) {
     userslist = sessionStorage.setItem("userslist", users)
     console.log(users)
     let l = 0
