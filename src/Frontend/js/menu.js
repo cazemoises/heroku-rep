@@ -11,11 +11,11 @@ function changePage2(){
 }
 
 function changePage3(){
-    window.location = '../../Agendamento/HTML/Agendamento.html';
+    window.location = '../html/Agendamento.html';
 }
 
 function changePage4(){
-    window.location = '../../ExplicativoDs/HTML/ExplicativoDs.html';
+    window.location = '../html/ExplicativoDs.html';
 }
 
 function changePage5(){
