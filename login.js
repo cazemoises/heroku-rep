@@ -9,6 +9,7 @@ function signup() {
     window.location = '../cadastro.html'
 }
 function getUsers() {
+    console.log("a")
     login = $("#login").val();
     pass = $("#pass").val();
     $.get("http://127.0.0.1:3000/users", function(users) {
@@ -43,9 +44,10 @@ function postAcess() {
         })
     }
     changePage()
+    console.log("Achei")
 }
 function changePage() {
-    window.location = "../antecipe.html"
+    window.location = "src/Frontend/html/antecipe.html"
 }
 function toastLoginSucces() {
     toast({
