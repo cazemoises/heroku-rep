@@ -11,12 +11,13 @@ function signup() {
 function getUsers() {
     login = $("#login").val();
     pass = $("#pass").val();
-    $.get("https://teste-caze.herokuapp.com", function(users) {
+    $.get("http://teste-caze.herokuapp.com", function(users) {
     userslist = sessionStorage.setItem("userslist", users)
-    let i = 0
-    while (i < users.length) {
+    console.log(users)
+    let l = 0
+    while (l < users.length) {
         console.log(users)
-        console.log(i)
+        console.log(l)
     if (users[i].login == login) {
         if (users[i].senha == pass) {
             logged = true;  
