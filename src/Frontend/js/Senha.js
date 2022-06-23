@@ -17,7 +17,7 @@ for (let pin of otp.children) {
 }
 
 function changePage(){
-    window.location='../../Feedback/HTML/Feedback.html'
+    window.location='../html/Feedback.html'
 }
 
 function confirmProcess(){
