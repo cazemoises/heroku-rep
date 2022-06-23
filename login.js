@@ -12,7 +12,7 @@ function getUsers() {
     console.log($('.logo').src)
     login = $("#login").val();
     pass = $("#pass").val();
-    $.get("http://127.0.0.1:3000/users", function(users) {
+    $.get("https://teste-caze.herokuapp.com/users", function(users) {
     userslist = sessionStorage.setItem("userslist", users)
     console.log(users)
     while (i < users.length) {
