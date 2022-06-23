@@ -7,7 +7,7 @@ function changePage1(){
 }
 
 function changePage2(){
-    window.location = '../../Historico/html/extrato.html';
+    window.location = '../html/extrato.html';
 }
 
 function changePage3(){
