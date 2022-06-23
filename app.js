@@ -28,7 +28,7 @@ app.post('/createpartner', urlencodedParser, (req, res) => {
 app.post('/register', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
-	sql = "INSERT INTO ANTECIPACAO (montanteEscolhido, regraNegocio, hotelCnpj, discountedAnticipation, data) VALUES ('" + req.body.montanteEscolhido + "', '" + req.body.regraNegocio + "', '" + req.body.hotelCnpj +  "', '" + req.body.discountedAnticipation + "', '" + req.body.hotelCnpj +  "')";
+	sql = "INSERT INTO ANTECIPACAO (montanteEscolhido, regraNegocio, hotelCnpj, discountedAnticipation, data) VALUES ('" + req.body.montanteEscolhido + "', '" + req.body.regraNegocio + "', '" + req.body.hotelCnpj +  "', '" + req.body.discountedAnticipation + "', '" + req.body.hotelCnpj +  "', '" + req.body.data +  "')";
 	console.log(sql);
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
 	db.all(sql, [],  err => {
