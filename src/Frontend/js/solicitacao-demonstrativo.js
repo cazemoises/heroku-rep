@@ -1,6 +1,6 @@
 var currentVal = sessionStorage.getItem("currentVal")
 var logged_cnpj = sessionStorage.getItem("logged_cnpj")
-var regra = sessionStorage.getItem("regra")
+var regra
 var valorEscolhido = sessionStorage.getItem("valorEscolhido")
 var resultado = sessionStorage.getItem("resultado")
 var d
@@ -12,6 +12,7 @@ function teste() {
   console.log(currentVal + " " + logged_cnpj + " " + regra + " " + valorEscolhido + " " + resultado)
 }
 function viewAnticipation() {
+        regra = sessionStorage.getItem("regra")
         if (regra == 2) {
           d = '2'
         }
@@ -28,9 +29,6 @@ function viewAnticipation() {
         var dia = data.getDate()
         var mes = data.getMonth()+1;
         var ano = data.getFullYear();
-        var hora = data.getHours();
-        var min = data.getMinutes();
-        var seg = data.getSeconds();
         var dianome
         switch (new Date().getDay()) {
             case 0:
