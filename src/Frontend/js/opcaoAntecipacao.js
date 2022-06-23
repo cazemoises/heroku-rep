@@ -1,8 +1,6 @@
 function changetomontante() {
-    console.log("funciona");
-    window.location = '../../Fatura/HTML/SolicitacaoHurb.html'
+    window.location = '../html/SolicitacaoHurb.html'
 }
 function changetoreserva() {
-    console.log("funciona");
-    window.location = '../../../reservas.html';
+    window.location = '../../../reservas.html'
 }
