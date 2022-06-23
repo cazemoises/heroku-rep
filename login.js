@@ -28,6 +28,7 @@ function getUsers() {
 }
 if (logged == false) {
     alert("Login ou senha inválidos");
+    failLogin()
 }
 else {
         toastLoginSucces();
@@ -56,6 +57,15 @@ function toastLoginSucces() {
       title: "Sucesso!",
       message: "Você efetuou login no sistema.",
       type: "success",
+      duration: 5000
+    });
+  }
+
+function failLogin() {
+    toast({
+      title: "Erro!",
+      message: "Login ou senha inválidos.",
+      type: "error",
       duration: 5000
     });
   }
