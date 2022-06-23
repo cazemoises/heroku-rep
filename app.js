@@ -8,7 +8,7 @@ const port = process.env.PORT || 1234;
 const DBPATH = 'dbHURB.db';
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("/"));
+app.use(express.static("./"));
 
 // Adicionar um parceiro com seu nome e montante total(que vai ser calculado automaticamente e não manualmente, e atualizado em tempo real)
 app.post('/createpartner', urlencodedParser, (req, res) => {
