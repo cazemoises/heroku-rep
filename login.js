@@ -13,14 +13,16 @@ function getUsers() {
     pass = $("#pass").val();
     $.get("https://teste-caze.herokuapp.com", function(users) {
     userslist = sessionStorage.setItem("userslist", users)
+    let i = 0
     while (i < users.length) {
+        console.log(i)
     if (users[i].login == login) {
         if (users[i].senha == pass) {
             logged = true;  
         }
     }
-    i += 1;    
     console.log(logged)
+    i += 1;    
 }
 if (logged == false) {
     alert("Login ou senha inválidos");
