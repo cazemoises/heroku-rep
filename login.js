@@ -6,7 +6,7 @@ var api = 'https://teste-caze.herokuapp.com';
 
 var userslist
 function signup() {
-    window.location = 'l'
+    window.location = 'src/Frontend/html/cadastro.html'
 }
 function getUsers() {
     login = $("#login").val();
