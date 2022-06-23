@@ -3,7 +3,7 @@ function changePage(){
 }
 
 function changePage1(){
-    window.location = '../../../index.html';
+    window.location = '../html/antecipe.html';
 }
 
 function changePage2(){
