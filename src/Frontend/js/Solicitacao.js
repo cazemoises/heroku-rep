@@ -109,7 +109,7 @@ function toast({ title = "", message = "", type = "info", duration = 3000 }) {
                       </div>
                   `;
       main.appendChild(toast);
-      $("#valorEscolhido").val('')
+      // $("#valorEscolhido").val('')
     }
   }
   
