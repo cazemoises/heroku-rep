@@ -6,7 +6,7 @@ var resultado = sessionStorage.getItem("resultado");
 var d;
 
 function changePage(){
-    window.location = '../../Senha/HTML/Senha.html';
+    window.location = '../html/Senha.html';
 }
 function teste() {
   console.log(currentVal + " " + logged_cnpj + " " + regra + " " + valorEscolhido + " " + resultado)
