@@ -68,7 +68,7 @@ function getAmount() {
     }
 function eyeMode() {
     if(document.getElementById('eyeimg').src == 'https://teste-caze.herokuapp.com/imgs/olho_aberto2.png') {
-        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_fechado.png'
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/imgs/olho_fechado.png'
         let i = 0;
         let stringPart = String(part).length
         console.log(stringPart)
@@ -79,7 +79,7 @@ function eyeMode() {
         }
     }
     else {
-        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_aberto2.png'
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/imgs/olho_aberto2.png'
         $('#teste2').html(`R$ ${currentVal}`)
     }
 }
