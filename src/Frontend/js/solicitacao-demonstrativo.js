@@ -25,7 +25,7 @@ function viewAnticipation() {
           d = '30'
         }
         var data = new Date();
-        var dia = data.getDate();
+        var dia = data.getDate() + 1;
         var mes = data.getMonth();
         var ano = data.getFullYear();
         var hora = data.getHours();
