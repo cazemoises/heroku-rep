@@ -25,7 +25,6 @@ app.post('/createpartner', urlencodedParser, (req, res) => {
 	res.end();
 });
 
-
 app.post('/register', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
