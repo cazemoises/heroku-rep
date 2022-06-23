@@ -22,10 +22,6 @@ function extrato(){
 function configuracoes(){
     window.location = ''
 }
-
-function saiba_mais(){
-    window.location= 'file:///C:/Users/Inteli/Desktop/DESENVOLVIMENTO%20WEB/NOVAS%20TELAS%20-%20DAYLLAN/Apresenta%C3%A7%C3%A3o/2.%20HOTEL.HENRI%20-%20Menu.Hoteleiro/HTML/tela%20de%20cadastro.html'
-}
 var logged_cnpj
 function getAmount() {
     $.get("https://teste-caze.herokuapp.com/get-access", function(access) {
@@ -68,8 +64,8 @@ function getAmount() {
     }
 function eyeMode() {
     console.log(document.getElementById('eyeimg').src)
-    if(document.getElementById('eyeimg').src == 'https://teste-caze.herokuapp.com/imgs/olho_aberto2.png') {
-        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/imgs/olho_fechado.png'
+    if(document.getElementById('eyeimg').src == 'https://teste-caze.herokuapp.com/src/Frontend/imgs/olho_aberto2.png') {
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/src/Frontend/imgs/olho_fechado.png'
         let i = 0;
         let stringPart = String(part).length
         console.log(stringPart)
@@ -80,7 +76,7 @@ function eyeMode() {
         }
     }
     else {
-        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/imgs/olho_aberto2.png'
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/src/Frontend/imgs/olho_aberto2.png'
         $('#teste2').html(`R$ ${currentVal}`)
     }
 }
