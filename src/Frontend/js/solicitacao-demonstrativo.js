@@ -12,16 +12,16 @@ function teste() {
   console.log(currentVal + " " + logged_cnpj + " " + regra + " " + valorEscolhido + " " + resultado)
 }
 function viewAnticipation() {
-        if (regra == "2") {
+        if (regra == 2) {
           d = '2'
         }
-        else if (regra == "7") {
+        else if (regra == 7) {
           d = '7'
         }
-        else if (regra == "15") {
+        else if (regra == 15) {
           d = '15'
         }
-        else if (regra == "30") {
+        else if (regra == 30) {
           d = '30'
         }
         var data = new Date();
@@ -55,7 +55,7 @@ function viewAnticipation() {
               dianome = "Sábado";
         }
         $("#datenow").html(`${dia}/${mes}/${ano} - ${dianome}`);
-        $("#ds").html(`D+${} (${regra}%)`);
+        $("#ds").html(`D+${dia} (${regra}%)`);
         $("#choosen-value").html(`R$ ${valorEscolhido}`);
         $("#final-value").html(`R$ ${resultado}`)
 }
