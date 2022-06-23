@@ -12,16 +12,16 @@ function teste() {
   console.log(currentVal + " " + logged_cnpj + " " + regra + " " + valorEscolhido + " " + resultado)
 }
 function viewAnticipation() {
-        if (regra == 12) {
+        if (regra == 2) {
           d = '2'
         }
-        else if (regra == 9) {
+        else if (regra == 7) {
           d = '7'
         }
-        else if (regra == 6) {
+        else if (regra == 15) {
           d = '15'
         }
-        else if (regra == 0) {
+        else if (regra == 30) {
           d = '30'
         }
         var data = new Date();
