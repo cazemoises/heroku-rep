@@ -1,6 +1,6 @@
 var currentVal = sessionStorage.getItem("currentVal")
 var logged_cnpj = sessionStorage.getItem("logged_cnpj")
-var regra
+var regra = sessionStorage.getItem("regra")
 var valorEscolhido = sessionStorage.getItem("valorEscolhido")
 var resultado = sessionStorage.getItem("resultado")
 var d
@@ -12,17 +12,16 @@ function teste() {
   console.log(currentVal + " " + logged_cnpj + " " + regra + " " + valorEscolhido + " " + resultado)
 }
 function viewAnticipation() {
-        regra = sessionStorage.getItem("regra")
-        if (regra == 2) {
+        if (regra == 12) {
           d = '2'
         }
-        else if (regra == 7) {
+        else if (regra == 9) {
           d = '7'
         }
-        else if (regra == 15) {
+        else if (regra == 6) {
           d = '15'
         }
-        else if (regra == 30) {
+        else if (regra == 0) {
           d = '30'
         }
         var data = new Date();
