@@ -3,7 +3,7 @@ var logged_cnpj = sessionStorage.getItem("logged_cnpj");
 var regra = sessionStorage.getItem("regra");
 var valorEscolhido = sessionStorage.getItem("valorEscolhido");
 var resultado = sessionStorage.getItem("resultado");
-var api = 'http://127.0.0.1:3000'
+var api = 'https://teste-caze.herokuapp.com'
 
 let otp = document.querySelector("#otp-input");
 

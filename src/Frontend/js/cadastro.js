@@ -1,4 +1,4 @@
-var api = 'http://127.0.0.1:3000'
+var api = 'https://teste-caze.herokuapp.com'
 // Check se os valores da etapa 1 da inscrição são válidos (LOGIN e PIN)
 function check() {
     

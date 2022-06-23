@@ -1,4 +1,4 @@
-var api = '127.0.0.1:3000'
+var api = 'https://teste-caze.herokuapp.com'
 var logged_cnpj = sessionStorage.getItem("logged_cnpj");
 var reservas;
 function getReserves() {
