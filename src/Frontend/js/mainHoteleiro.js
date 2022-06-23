@@ -28,10 +28,10 @@ function saiba_mais(){
 }
 var logged_cnpj
 function getAmount() {
-    $.get("http://127.0.0.1:3000/get-access", function(access) {
+    $.get("https://teste-caze.herokuapp.com/get-access", function(access) {
     let accessed = (access[0].login_parceiro);
     console.log(accessed + " = login que acessou");
-    $.get("http://127.0.0.1:3000/users", function(users) {
+    $.get("https://teste-caze.herokuapp.com/users", function(users) {
         console.log(users);
         // fazer looping para verificar qual users[n].login é igual ao accessed (login do acesso mais recente)
         let i = 0;
@@ -42,7 +42,7 @@ function getAmount() {
                 console.log(users[i].hotel_cnpj)
                 logged_cnpj = (users[i].hotel_cnpj)
                 console.log(logged_cnpj);
-                $.get("http://127.0.0.1:3000/get-hotels", function(hotels) {
+                $.get("https://teste-caze.herokuapp.com/get-hotels", function(hotels) {
                 let j = 0;    
                 let match = false;
                 while (j < hotels.length && match == false) {
@@ -67,8 +67,8 @@ function getAmount() {
     })
     }
 function eyeMode() {
-    if(document.getElementById('eyeimg').src == 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png') {
-        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_fechado.png'
+    if(document.getElementById('eyeimg').src == 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_aberto2.png') {
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_fechado.png'
         let i = 0;
         let stringPart = String(part).length
         console.log(stringPart)
@@ -79,7 +79,7 @@ function eyeMode() {
         }
     }
     else {
-        document.getElementById('eyeimg').src = 'http://127.0.0.1:3000/Sequencia/Conta/HTML/olho_aberto2.png'
+        document.getElementById('eyeimg').src = 'https://teste-caze.herokuapp.com/Sequencia/Conta/HTML/olho_aberto2.png'
         $('#teste2').html(`R$ ${currentVal}`)
     }
 }

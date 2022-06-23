@@ -3,7 +3,7 @@ var api = 'http://127.0.0.1:3000'
 function check() {
     
     let i = 0;
-    $.get("http://127.0.0.1:3000/users", function(users) {
+    $.get("https://teste-caze.herokuapp.com/users", function(users) {
         let exists = false
         while (i<users.length) {
             if ($('#login').val() == users[i].login) {

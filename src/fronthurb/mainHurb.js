@@ -9,7 +9,7 @@ var size
 var anticipationslist
 // Pega o status de antecipações
 function getAnticipationsNumber() {
-    $.get("http://127.0.0.1:3000/anticipations", function(quantidade) {
+    $.get("https://teste-caze.herokuapp.com/anticipations", function(quantidade) {
     anticipationslist = quantidade
     size = anticipationslist.length;
     if (size == 0) {
@@ -37,13 +37,13 @@ function getAnticipationsNumber() {
 }
 
 function getTable() {
-    $.get("http://127.0.0.1:3000/get-intersec", function(intersec) {
+    $.get("https://teste-caze.herokuapp.com/get-intersec", function(intersec) {
         let i = 0;
         while (i < intersec.length) {
             melhores.push(intersec[i].hotelCnpj)
             i += 1
        }
-    $.get("http://127.0.0.1:3000/get-hotels", function (hotels) {
+    $.get("https://teste-caze.herokuapp.com/get-hotels", function (hotels) {
 
         var top3Nomes = []
         var top3Cnpjs = []      

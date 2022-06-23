@@ -2,7 +2,7 @@ var logged_cnpj = sessionStorage.getItem("logged_cnpj");
 console.log(logged_cnpj)
 
 function teste() {
-    $.get("http://127.0.0.1:3000/anticipations", function(anticipation) {
+    $.get("https://teste-caze.herokuapp.com/anticipations", function(anticipation) {
       let i = 0;
       var requestedString = ' <div class="item">Valor Solicitado</div>'
       var discountedString = ' <div class="item">Valor Descontado</div>'

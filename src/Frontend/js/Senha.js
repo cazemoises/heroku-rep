@@ -28,7 +28,7 @@ function confirmProcess(){
         a += 1;
     }
     console.log(entryPass) 
-    $.get("http://127.0.0.1:3000/users", function(users) {
+    $.get("https://teste-caze.herokuapp.com/users", function(users) {
         let i = 0
         let match = false
         while (i<users.length && match == false) {
