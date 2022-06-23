@@ -6,7 +6,7 @@ var currentVal = sessionStorage.getItem("currentVal");
 var finalString
 // Muda a tela para a página seguinte (Demonstrativo)
 function changeScreen() {
-    window.location = "../html/opcaoAntecipacao.html"
+    window.location = "html/opcaoAntecipacao.html"
 }
 // Verifica se o campo está vazio e se seu valor é menor que o montante total do parceiro. Se sim, salva as variáveis para dar o post em seguida (rodando a função insert())
 function confirm(){
