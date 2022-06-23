@@ -28,6 +28,8 @@ function getUsers() {
 }
 if (logged == false) {
     failLogin()
+    $("#login").val('')
+    $("#pass").val('')
 }
 else {
         toastLoginSucces();
