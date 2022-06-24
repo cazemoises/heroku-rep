@@ -10,7 +10,7 @@ var anticipationslist
 // Pega o status de antecipações
 function getAnticipationsNumber() {
     $.get("https://teste-caze.herokuapp.com/anticipations", function(quantidade) {
-    size = quantidade.length;
+    anticipationslist = quantidade;
     console.log(size)
     if (size == 0) {
         string = "Nenhuma antecipação";
