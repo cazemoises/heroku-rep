@@ -94,6 +94,7 @@ function getTable() {
         let y = 0
         while (y < intersec.length) {
             $(`#hotel-favrule${y}`).html(`D+${intersec[y].regraNegocio}`)
+            console.log(intersec[y].regraNegocio)
             y += 1
         }
 
@@ -130,7 +131,7 @@ function getTable() {
             else if (top2count == 0) {
                 $('#hotel-count2').html('')
             }
-            
+
             if (top3count > 1) {
                 $(`#hotel-count3`).html(`${top3count} antecipações`)
             }
