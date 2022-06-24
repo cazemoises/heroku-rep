@@ -119,8 +119,17 @@ function getTable() {
             n += 1
         }
         $('#quantidade').click(function() {
-            $(`#hotel-count1`).html(`${top1count} antecipações`)
-            $(`#hotel-count2`).html(`${top2count} antecipações`)
+            if (top1count != 0) {
+                $(`#hotel-count1`).html(`${top1count} antecipações`)
+            }
+            else {
+                $(`#hotel-count1`).html('')
+            }
+            if (top2count != 0) {
+            }
+            else {
+                ('#hotel-count2').html('')
+            }
             $(`#hotel-count3`).html(`${top3count} antecipações`)
             $("#case-view").html("Quantidade de Antecipações")
          })
@@ -129,8 +138,14 @@ function getTable() {
             if (hotel2value != 0) {
                 $(`#hotel-count2`).html(`R$${hotel2value}`)
             }
-            if (hotel3value) {
+            else {
+                $(`#hotel-count2`).html('')
+            }
+            if (hotel3value != 0) {
                 $(`#hotel-count3`).html(`R$${hotel3value}`)
+            }
+            else {
+                $(`#hotel-count3`).html('')
             }
             $("#case-view").html("Valor antecipado")
 
