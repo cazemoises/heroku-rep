@@ -12,6 +12,7 @@ function getAnticipationsNumber() {
     $.get("https://teste-caze.herokuapp.com/anticipations", function(quantidade) {
     anticipationslist = quantidade
     size = anticipationslist.length;
+    console.log(size)
     if (size == 0) {
         string = "Nenhuma antecipação";
         $("#anticipations-amount").html(string);    
