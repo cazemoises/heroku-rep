@@ -117,21 +117,24 @@ function getTable() {
             n += 1
         }
         $('#quantidade').click(function() {
-            if (top1count != 0) {
+            if (top1count > 1) {
                 $(`#hotel-count1`).html(`${top1count} antecipações`)
             }
-            else {
+            else if (top1count == 0) {
                 $(`#hotel-count1`).html('')
             }
-            if (top2count != 0) {
+
+            if (top2count > 1) {
+                $(`#hotel-count2`).html(`${top2count} antecipações`)
             }
-            else {
+            else if (top2count == 0) {
                 $('#hotel-count2').html('')
             }
-            if (top3count != 0) {
+            
+            if (top3count > 1) {
                 $(`#hotel-count3`).html(`${top3count} antecipações`)
             }
-            else {
+            else if (top3count == 0) {
                 $(`#hotel-count3`).html('')
             }
             $("#case-view").html("Quantidade de Antecipações")
