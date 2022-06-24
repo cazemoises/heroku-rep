@@ -128,7 +128,7 @@ function getTable() {
             if (top2count != 0) {
             }
             else {
-                ('#hotel-count2').html('')
+                $('#hotel-count2').html('')
             }
             $(`#hotel-count3`).html(`${top3count} antecipações`)
             $("#case-view").html("Quantidade de Antecipações")
