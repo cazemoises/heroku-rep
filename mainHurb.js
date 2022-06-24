@@ -81,7 +81,7 @@ function getTable() {
         console.log(anticipationslist)
         console.log(top3Cnpjs)
         let m = 0
-        while (m < anticipationslist.length) {
+        for (let m = 0; m < anticipationslist.length; m++) {
             if (anticipationslist[m].hotelCnpj == top3Cnpjs[0]) {
                 top1count += 1
             }
@@ -90,8 +90,7 @@ function getTable() {
             }
             else if (anticipationslist[m].hotelCnpj == top3Cnpjs[2]) {
                 top3count += 1
-            }   
-            m += 1
+            }
         }
         console.log(top1count + " " + top2count + " " + top3count)
         let y = 1
