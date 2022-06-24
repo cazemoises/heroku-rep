@@ -97,7 +97,7 @@ function getTable() {
             $(`#hotel-favrule1`).html(`D+${intersec[0].regraNegocio}`)
             $(`#hotel-favrule2`).html(`D+${intersec[1].regraNegocio}`)
             $(`#hotel-favrule3`).html(`D+${intersec[2].regraNegocio}`)
-            y += 1
+            y++
             console.log(intersec[0].regraNegocio + "  " + intersec[1].regraNegocio + " " + intersec[2].regraNegocio)
         }
         let n = 0
