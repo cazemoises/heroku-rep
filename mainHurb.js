@@ -10,8 +10,7 @@ var anticipationslist
 // Pega o status de antecipações
 function getAnticipationsNumber() {
     $.get("https://teste-caze.herokuapp.com/anticipations", function(quantidade) {
-    anticipationslist = quantidade
-    size = anticipationslist.length;
+    size = quantidade.length;
     console.log(size)
     if (size == 0) {
         string = "Nenhuma antecipação";
@@ -93,9 +92,8 @@ function getTable() {
             }
         }
         console.log(top1count + " " + top2count + " " + top3count)
-        let y = 1
         console.log(intersec)
-        while (y<3) {
+        for (y in 3) {
             $(`#hotel-favrule1`).html(`D+${intersec[0].regraNegocio}`)
             $(`#hotel-favrule2`).html(`D+${intersec[1].regraNegocio}`)
             $(`#hotel-favrule3`).html(`D+${intersec[2].regraNegocio}`)
