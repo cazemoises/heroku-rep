@@ -39,6 +39,7 @@ function getAnticipationsNumber() {
 function getTable() {
     $.get("https://teste-caze.herokuapp.com/get-intersec", function(intersec) {
         let i = 0;
+        console.log(intersec)
         while (i < intersec.length) {
             melhores.push(intersec[i].hotelCnpj)
             i += 1
