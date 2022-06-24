@@ -126,8 +126,12 @@ function getTable() {
          })
          $('#valor').click(function() {
             $(`#hotel-count1`).html(`R$${hotel1value}`)
-            $(`#hotel-count2`).html(`R$${hotel2value}`)
-            $(`#hotel-count3`).html(`R$${hotel3value}`)
+            if (hotel2value != 0) {
+                $(`#hotel-count2`).html(`R$${hotel2value}`)
+            }
+            if (hotel3value) {
+                $(`#hotel-count3`).html(`R$${hotel3value}`)
+            }
             $("#case-view").html("Valor antecipado")
 
         });
