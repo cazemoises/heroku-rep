@@ -93,7 +93,7 @@ function getTable() {
         }
         let y = 0
         while (y < intersec.length) {
-            $(`#hotel-favrule${y}`).html(`D+${intersec[y].regraNegocio}`)
+            $(`#hotel-favrule${y+1}`).html(`D+${intersec[y].regraNegocio}`)
             console.log(intersec[y].regraNegocio)
             y += 1
         }
