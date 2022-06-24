@@ -128,7 +128,12 @@ function getTable() {
             else {
                 $('#hotel-count2').html('')
             }
-            $(`#hotel-count3`).html(`${top3count} antecipações`)
+            if (top3count != 0) {
+                $(`#hotel-count3`).html(`${top3count} antecipações`)
+            }
+            else {
+                $(`#hotel-count3`).html('')
+            }
             $("#case-view").html("Quantidade de Antecipações")
          })
          $('#valor').click(function() {
