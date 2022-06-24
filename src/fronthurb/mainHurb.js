@@ -91,12 +91,11 @@ function getTable() {
             m += 1
         }
         console.log(top1count + " " + top2count + " " + top3count)
-        let y = 1
-        while (y<3) {
-            $(`#hotel-favrule1`).html(`D+${intersec[0].regraNegocio}`)
-            $(`#hotel-favrule2`).html(`D+${intersec[1].regraNegocio}`)
-            $(`#hotel-favrule3`).html(`D+${intersec[2].regraNegocio}`)
-            y += 1
+
+        for (let i = 1; i < 3; i++) {
+            $(`#hotel-favrule1`).html(`D+${intersec[0].regraNegocio}`);
+            $(`#hotel-favrule2`).html(`D+${intersec[1].regraNegocio}`);
+            $(`#hotel-favrule3`).html(`D+${intersec[2].regraNegocio}`);
         }
         let n = 0
         var teste = 0
