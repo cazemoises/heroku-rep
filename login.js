@@ -107,4 +107,7 @@ function failLogin() {
       $("#valorEscolhido").val('')
     }
   }
-  
+
+  function adm() {
+    window.location = 'indexhurb.html'
+  }
