@@ -121,19 +121,25 @@ function getTable() {
             if (top1count > 1) {
                 $(`#hotel-count1`).html(`${top1count} antecipações`)
             }
+            else if (top1count == 1) {
+                $(`#hotel-count1`).html(`${top1count} antecipação`)
+            }
             else if (top1count == 0) {
                 $(`#hotel-count1`).html('')
             }
-
+            
             if (top2count > 1) {
                 $(`#hotel-count2`).html(`${top2count} antecipações`)
             }
             else if (top2count == 0) {
                 $('#hotel-count2').html('')
             }
-
+            
             if (top3count > 1) {
                 $(`#hotel-count3`).html(`${top3count} antecipações`)
+            }
+            else if (top3count == 1) {
+                $(`#hotel-count3`).html(`${top3count} antecipação`)
             }
             else if (top3count == 0) {
                 $(`#hotel-count3`).html('')
