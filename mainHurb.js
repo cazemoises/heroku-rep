@@ -93,7 +93,8 @@ function getTable() {
         }
         console.log(top1count + " " + top2count + " " + top3count)
         console.log(intersec)
-        for (y in 3) {
+        let y = 0
+        while (y < 3) {
             $(`#hotel-favrule1`).html(`D+${intersec[0].regraNegocio}`)
             $(`#hotel-favrule2`).html(`D+${intersec[1].regraNegocio}`)
             $(`#hotel-favrule3`).html(`D+${intersec[2].regraNegocio}`)
