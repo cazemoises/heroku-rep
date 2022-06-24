@@ -69,6 +69,7 @@ function getTable() {
             i += 1
         }
         console.log(top3Nomes)
+        console.log(intersec)
         $("#hotel-name1").html(top3Nomes[0])
         $("#hotel-name2").html(top3Nomes[1])
         $("#hotel-name3").html(top3Nomes[2])
