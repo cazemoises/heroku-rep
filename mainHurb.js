@@ -13,15 +13,15 @@ function getAnticipationsNumber() {
     anticipationslist = quantidade;
     console.log(quantidade)
     console.log(anticipationslist)
-    if (size == 0) {
+    if (anticipationslist.length == 0) {
         string = "Nenhuma antecipação";
         $("#anticipations-amount").html(string);    
     }
-    else if (size == 1) {
-        $("#anticipations-amount").html(size);
+    else if (anticipationslist.length == 1) {
+        $("#anticipations-amount").html(`${anticipationslist.length}`);
     }
-    else if (size > 1) {
-        $("#anticipations-amount").html(size);
+    else if (anticipationslist.length > 1) {
+        $("#anticipations-amount").html(`${anticipationslist.length}`);
     }
     
     quantidade.map(item => {
