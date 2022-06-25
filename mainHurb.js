@@ -5,7 +5,6 @@ var lucroTotal = 0;
 var string;
 var anticipations
 var melhores = []
-var size
 var anticipationslist
 // Pega o status de antecipações
 function getAnticipationsNumber() {
@@ -13,6 +12,7 @@ function getAnticipationsNumber() {
         console.log(quantidade)
     anticipationslist = quantidade;
     console.log(quantidade)
+    console.log(anticipationslist)
     if (size == 0) {
         string = "Nenhuma antecipação";
         $("#anticipations-amount").html(string);    
